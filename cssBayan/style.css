@@ -1,0 +1,58 @@
+
+.wrapper{
+    margin: auto;
+    margin-top: 0px;
+    width: 1920px;
+    padding: 0px;
+}
+
+.content{
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 100%;
+}
+
+.content:hover,
+.label:hover{
+cursor: pointer;
+}
+
+.label{
+border-bottom: 1px solid black;
+display: flex;
+font: 1.2em "Fira Sans", sans-serif;
+}
+
+.mem{
+    display: none; 
+    height: 500px;
+    width: 500px;
+ }
+
+  #btn-1:checked~#mem-1,
+  #btn-2:checked~#mem-2,
+  #btn-3:checked~#mem-3,
+  #btn-4:checked~#mem-4{
+    display:block;
+  }
+
+  #btn-1:hover~#mem-1,
+  #btn-2:hover~#mem-2,
+  #btn-3:hover~#mem-3,
+  #btn-4:hover~#mem-4{
+    display:block;
+    cursor: pointer;
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+.cross{
+    width: 20px;
+    height: 20px;
+}
+
+.mem_image{
+    height: 100%;
+}
